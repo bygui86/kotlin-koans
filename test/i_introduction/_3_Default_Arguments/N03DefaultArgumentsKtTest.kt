@@ -6,6 +6,6 @@ import org.junit.Test
 class N03DefaultArgumentsKtTest {
 
     @Test fun testDefaultAndNamedParams() {
-        assertEquals("a42b1C42D2", task3())
+        assertEquals("a42b1C42D2E3", task3())
     }
 }

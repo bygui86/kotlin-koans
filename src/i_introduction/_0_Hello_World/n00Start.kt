@@ -24,6 +24,10 @@ fun todoTask0(): Nothing = TODO(
     references = { task0(); "OK" }
 )
 
-fun task0(): String {
-    return todoTask0()
-}
+// my solution
+//fun task0(): String {
+//    return "OK"
+//}
+
+// optimal solution
+fun task0() = "OK"
