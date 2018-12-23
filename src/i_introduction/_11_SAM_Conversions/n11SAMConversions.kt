@@ -15,6 +15,12 @@ fun todoTask11(): Nothing = TODO(
 
 fun task11(): List<Int> {
     val arrayList = arrayListOf(1, 5, 2)
-    Collections.sort(arrayList, { x, y -> todoTask11() })
+
+    // STEP 1: java-kotlin mix optimal solution
+//    Collections.sort(arrayList, { x, y -> y.compareTo(x) })
+
+    // STEP 2: kotlin optimal solution
+    arrayList.sortWith(Comparator { x, y -> y.compareTo(x) })
+
     return arrayList
 }
